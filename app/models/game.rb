@@ -97,7 +97,7 @@ class Game
   def gallows
     File
       .read("gallows.txt")
-      .split(".")
+      .split("BREAK")
       .find
       .with_index { |_, i| number_of_wrong_guesses == i }
   end
@@ -124,7 +124,6 @@ class Game
 
   def write_to_wrong_guesses
     new_file = file
-    # binding.pry
     new_file[2] = next_wrong_guesses.join(" ")
     write_to_file(new_file)
   end
