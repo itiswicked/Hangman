@@ -1,8 +1,7 @@
 require 'httparty'
-
 options = {
   body: {
-    guess: 'O'
+    guess: ARGV.first
   }
 }
 
