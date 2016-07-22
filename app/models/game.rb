@@ -5,7 +5,6 @@ class Game
     @word = word_array
     @guess_state = guess_state_array
     @wrong_guesses = wrong_guesses_array
-    # binding.pry
   end
 
   def self.start_round(guess)
